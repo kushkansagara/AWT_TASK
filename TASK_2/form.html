@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .inputF input{
+        margin-bottom: 10px;
+        padding: 10px;
+        /* min-width: 200px; */
+        /* max-width: 400px; */
+    }
+    .container
+    {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        /* border: 1px solid black; */
+        border-radius: 5px;
+        background-color: white;
+
+
+        /* text-align: center; */
+    }
+    .container input{
+        margin-bottom: 10px;
+        padding: 10px;
+        /* width: 200px; */
+
+    }
+
+</style>
+<body>
+    <div class="container">
+    <!-- <h1>Input Form</h1> -->
+    <!-- <form action="" onsubmit="allFunction()"> -->
+    <input type="text"  id="fname" placeholder="Enter Your Full Name">
+    <span id="message4"></span>
+    <br>
+    <input type="text" id="usern" placeholder="Enter Your UserName">
+    <span id="message5"></span>
+    <br>
+    <input type="password" id="Pass" placeholder="Enter Your PassWord">
+    <span id="message"></span>
+    <br>
+    <input type="password" id="Conpass" placeholder="Enter Your Conform PassWord">
+    <span id="message1"></span>
+    <br>
+    <label>Gender:</label>
+    <br>
+    <label for="gender-male">Male</label>
+    <input type="radio" id="gender-male" name="gender" value="male" required>
+    <br>
+    <label for="gender-female">female</label>
+    <input type="radio" id="gender-female" name="gender" value="female" required>
+    
+    <br>
+    <label for="other">Other</label>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <span id="message6"></span>
+    <br>
+    <input type="number" id="phone" placeholder="Enter Your Phone number">
+    <span id="message2"></span>
+    <br>
+    <input type="email" id="email" placeholder="Enter Your Email">
+    <span id="message3"></span>
+    <br>
+    <select name="state" id="state">
+        <option value=""></option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Uttar-Pradesh">Uttar-Pradesh</option>
+    
+    </select>
+    <span id="message7"></span>
+    <br>
+    <br>
+    <input type="checkbox" id="agreement" name="agreement" required>
+    <label for="agreement">I agree to the terms and conditions</label>
+    <span id="agreementError" class="error"></span>
+    <br>
+    <input onclick="allFunction()" type="button" value="submit">
+</div>
+</div>
+<!-- </form> -->
+</body>
+<script src="Signup.js"></script>
+</html>
